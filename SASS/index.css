@@ -63,9 +63,8 @@ header {
 }
 
 .container .photos {
-  float: left;
   margin: 5px;
-  width: 180px;
+  width: 30%;
   border: 1px solid #ccc;
 }
 
@@ -75,7 +74,7 @@ header {
 
 .container .photos img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .container .opinion {
@@ -83,10 +82,95 @@ header {
   text-align: center;
 }
 
-/* div.photos {
-    
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .topnav {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 120%;
+  }
+  header p {
+    font-size: 120%;
+  }
+  .photos {
+    margin: 5px;
+    width: 10%;
     border: 1px solid #ccc;
-    
-    width: 180px;
-  } */
+  }
+  .opinion {
+    font-size: 120%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .topnav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .topnav a {
+    font-size: 120%;
+  }
+  header h1 {
+    font-size: 120%;
+  }
+  header p {
+    font-size: 120%;
+  }
+  .photos {
+    margin: 5px;
+    width: 30%;
+    border: 1px solid #ccc;
+  }
+  .opinion {
+    font-size: 120%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .topnav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .topnav a {
+    font-size: 80%;
+  }
+  header h1 {
+    font-size: 80%;
+  }
+  header p {
+    font-size: 80%;
+  }
+  .photos {
+    margin: 5px;
+    width: 50%;
+    border: 1px solid #ccc;
+  }
+  .opinion {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topnav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .topnav a {
+    font-size: 30%;
+  }
+  header h1 {
+    font-size: 30%;
+  }
+  header p {
+    font-size: 30%;
+  }
+  .container {
+    margin: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  .opinion {
+    font-size: 30%;
+  }
+}
 /*# sourceMappingURL=index.css.map */
