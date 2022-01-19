@@ -78,13 +78,25 @@ body {
 }
 
 .history {
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 2%;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .history img {
   width: 35%;
   height: 20%;
   border-radius: 3px;
+}
+
+.history .curiehusband {
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  left: 30%;
 }
 /*# sourceMappingURL=index.css.map */
