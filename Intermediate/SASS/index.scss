@@ -42,7 +42,7 @@ body {
   
   .container{
       position: relative;
-      height: 70vh;
+      height: 90vh;
       border: 1px solid black;
       img{
       object-fit: cover;
@@ -52,140 +52,81 @@ body {
       .heading{
       position: absolute;
       z-index:10;
-      top: 7%;
-      left: 59%;
+      top: 10%;
+      left: 55%;
       text-shadow: 1px 1px darkgrey;
       }
   }
 
-  .history{
-    position: relative;
-    flex-wrap: wrap;
-    padding-top: 2%;
-    text-align: center;
-    img{
-      position: relative;
-      width:65%;
-      height:50%;
-      border-radius: 3px;
-      top:7%;
-    }
-    .curiehusband{
-      position: absolute;
-      top:170%;
-    }
-    .text{
-      position: absolute;
-      z-index:10;
-      width:40%;
-      left:50%;
-      top:150%;
-      font-size: smaller;
-      text-align: right;
-    }
-  }
 
   @media screen and (min-width: 1025px) { 
     .topnav{
         flex-wrap: wrap;
             a{
-                font-size: 240%;
+                font-size: 120%;
             }
     } 
-    header{
+    .heading{
         h1{
-            font-size: 500%;
+            font-size: 180%;
         }
         p{
-            font-size: 400%;
+            font-size: 120%;
         }
     }
-    .photos{
-            margin: 5px;
-            width: 10%;
-            border: 1px solid #ccc;
-        }
-    footer{
-        h6{
-            font-size: 200%;
-        }
-        }
+       
     }
 
     @media screen and (min-width: 769px) and (max-width: 1024px) {  
         .topnav{
             flex-wrap: wrap;
-            a{
+                a{
+                    font-size: 110%;
+                }
+        } 
+        .heading{
+            h1{
                 font-size: 150%;
             }
-        } 
-        header{
-            h1{
-                font-size: 200%;
-            }
             p{
-                font-size: 120%;
+                font-size: 100%;
             }
         }
-        .photos{
-                margin: 5px;
-                width: 30%;
-                border: 1px solid #ccc;
-            }
-            footer{
-                h6{
-                    font-size: 120%;
-                }
-                }
+           
         }
 
         @media screen and (min-width: 481px) and (max-width: 768px) { 
             .topnav{
                 flex-wrap: wrap;
-                a{
-                    font-size: 100%;
-                }
-            }  
-            header{
-                h1{
-                    font-size: 160%;
-                }
-                p{
-                    font-size: 120%;
-                }
-            }
-            .photos{
-                    margin: 5px;
-                    width: 50%;
-                    border: 1px solid #ccc;
-                }
-                footer{
-                    h6{
-                        font-size: 110%;
-                    }
-                    }
-            }
-
-            @media screen and (max-width: 480px) { 
-
-                .topnav{
-                    flex-wrap: wrap;
                     a{
                         font-size: 100%;
                     }
+            } 
+            .heading{
+                h1{
+                    font-size: 150%;
                 }
-                header{
+                p{
+                    font-size: 90%;
+                }
+            }
+               
+            }
+
+            @media screen and (max-width: 480px) { 
+                .topnav{
+                    flex-wrap: wrap;
+                        a{
+                            font-size: 120%;
+                        }
+                } 
+                .heading{
                     h1{
-                        font-size: 190%;
+                        font-size: 130%;
                     }
                     p{
-                        font-size: 120%;
-                    }
-                }
-                
-                footer{
-                    h6{
                         font-size: 90%;
                     }
-                    }              
-            }
+                }
+                   
+                }
